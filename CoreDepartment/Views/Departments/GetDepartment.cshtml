@@ -1,0 +1,23 @@
+﻿@model CoreDepartment.Models.Department
+@{
+    ViewData["Title"] = "GetDepartment";
+    Layout = "~/Views/Shared/_Sidebar.cshtml";
+}
+
+@using (Html.BeginForm("UpdateDepartment", "Departments", FormMethod.Post))
+{
+
+    <br />
+
+    @Html.LabelFor(x => x.ID)
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+
+    <br />
+
+    @Html.LabelFor(x => x.DepartmentName)
+    @Html.TextBoxFor(x => x.DepartmentName, new { @class = "form-control" })
+
+    <br />  
+    <button class="btn btn-info">Update</button>
+}
+
