@@ -13,5 +13,7 @@ namespace CoreDepartment.Models
         public string EmpName { get; set; }
         public string EmpLastname { get; set; }
         public string EmpCity { get; set; }
+
+        public Department depart { get; set; }
     }
 }

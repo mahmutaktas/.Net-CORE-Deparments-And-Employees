@@ -1,0 +1,37 @@
+﻿@model List<CoreDepartment.Models.Employee>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Sidebar.cshtml";
+}
+
+<br />
+
+<table class="table table-bordered">
+
+    <tr class="bg-info">
+        <th>ID</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Department</th>
+        <th>Delete</th>
+        <th>Update</th>
+
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.ID</td>
+            <td>@x.EmpName @x.EmpLastname</td>
+            <td>@x.EmpCity</td>
+            <td>@x.depart.DepartmentName</td>
+            <td><a href="/Employees/DeleteEmployee/@x.ID" class="btn btn-danger">Delete</a></td>
+            <td><a href="/Employees/GetEmployee/@x.ID" class="btn btn-success">Update</a></td>
+
+
+
+        </tr>
+    }
+
+</table>
+<a href="/Employees/NewEmployee/" class="btn btn-primary">Add New Employee</a>

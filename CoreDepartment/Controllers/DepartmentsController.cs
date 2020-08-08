@@ -21,14 +21,12 @@ namespace CoreDepartment.Controllers
         [HttpGet]
         public IActionResult NewDepartment()
         {
-
             return View();
         }
 
         [HttpPost]
         public IActionResult NewDepartment(Department d)
         {
-
             c.departments.Add(d);
             c.SaveChanges();
             return RedirectToAction("Index");

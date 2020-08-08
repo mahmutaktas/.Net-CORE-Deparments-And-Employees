@@ -1,0 +1,35 @@
+﻿@model CoreDepartment.Models.Employee
+@{
+    ViewData["Title"] = "GetDepartment";
+    Layout = "~/Views/Shared/_Sidebar.cshtml";
+}
+
+@using (Html.BeginForm("UpdateEmployee", "Employees", FormMethod.Post))
+{
+
+    <br />
+
+    @Html.LabelFor(x => x.ID)
+    @Html.TextBoxFor(x => x.ID, new { @class = "form-control" })
+
+    <br />
+
+    @Html.LabelFor(x => x.EmpName)
+    @Html.TextBoxFor(x => x.EmpName, new { @class = "form-control" })
+
+
+    <br />
+
+    @Html.LabelFor(x => x.EmpLastname)
+    @Html.TextBoxFor(x => x.EmpLastname, new { @class = "form-control" })
+
+
+    <br />
+
+    @Html.LabelFor(x => x.EmpCity)
+    @Html.TextBoxFor(x => x.EmpCity, new { @class = "form-control" })
+
+
+    <br />
+    <button class="btn btn-info">Update</button>
+}

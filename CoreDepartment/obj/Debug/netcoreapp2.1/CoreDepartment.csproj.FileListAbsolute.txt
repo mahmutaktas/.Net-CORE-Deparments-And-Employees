@@ -34,3 +34,6 @@ C:\Users\Mahmut\source\repos\CoreDepartment\CoreDepartment\obj\Debug\netcoreapp2
 C:\Users\Mahmut\source\repos\CoreDepartment\CoreDepartment\obj\Debug\netcoreapp2.1\Razor\Views\Departments\Index.g.cshtml.cs
 C:\Users\Mahmut\source\repos\CoreDepartment\CoreDepartment\obj\Debug\netcoreapp2.1\Razor\Views\Departments\NewDepartment.g.cshtml.cs
 C:\Users\Mahmut\source\repos\CoreDepartment\CoreDepartment\obj\Debug\netcoreapp2.1\Razor\Views\Departments\GetDepartment.g.cshtml.cs
+C:\Users\Mahmut\source\repos\CoreDepartment\CoreDepartment\obj\Debug\netcoreapp2.1\Razor\Views\Employees\Index.g.cshtml.cs
+C:\Users\Mahmut\source\repos\CoreDepartment\CoreDepartment\obj\Debug\netcoreapp2.1\Razor\Views\Employees\NewEmployee.g.cshtml.cs
+C:\Users\Mahmut\source\repos\CoreDepartment\CoreDepartment\obj\Debug\netcoreapp2.1\Razor\Views\Employees\GetEmployee.g.cshtml.cs

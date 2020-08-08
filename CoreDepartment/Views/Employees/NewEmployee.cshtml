@@ -1,0 +1,25 @@
+﻿@model CoreDepartment.Models.Employee
+@{
+    ViewData["Title"] = "NewDepartment";
+    Layout = "~/Views/Shared/_Sidebar.cshtml";
+}
+
+<br />
+<form class="form-group" method="post">
+
+    @Html.LabelFor(x => x.EmpName)
+    @Html.TextBoxFor(x => x.EmpName, new { @class = "form-control" })
+
+    @Html.LabelFor(x => x.EmpLastname)
+    @Html.TextBoxFor(x => x.EmpLastname, new { @class = "form-control" })
+
+    @Html.LabelFor(x => x.EmpCity)
+    @Html.TextBoxFor(x => x.EmpCity, new { @class = "form-control" })
+
+    @Html.LabelFor(x => x.depart)
+    @Html.DropDownListFor(x => x.depart.ID, (List<SelectListItem>) ViewBag.departList, new { @class = "form-control" })
+
+    <br />
+    <button class="btn btn-info">Add</button>
+
+</form>

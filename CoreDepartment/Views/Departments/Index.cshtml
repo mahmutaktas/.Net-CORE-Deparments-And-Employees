@@ -13,7 +13,7 @@
         <th>Department</th>
         <th>Delete</th>
         <th>Update</th>
-        <th>Details</th>
+
     </tr>
 
     @foreach(var x in Model)
@@ -23,7 +23,7 @@
             <td>@x.DepartmentName</td>
             <td><a href="/Departments/DeleteDepartment/@x.ID" class="btn btn-danger">Delete</a></td>
             <td><a href="/Departments/GetDepartment/@x.ID" class="btn btn-success">Update</a></td>
-            <td><a href="#" class="btn btn-default" style="background-color:aqua">Details</a></td>
+
 
 
         </tr>
